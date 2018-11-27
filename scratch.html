@@ -1,0 +1,1010 @@
+<figure class="center">
+                    <img src="assets/diploma-compressor.jpg" alt= "Meghan with Syracuse University Military Multimedia Program diploma">
+                    <figcaption>Me with my diploma from <br>Syracuse University's Military <br>Motion Media Program in 2007</figcaption>
+                </figure>
+                <figure class="center">
+                    <img src="assets/meAndTaffy-compressor.jpg" alt= "Meghan and Taffy at Camp Unleashed">
+                    <figcaption>Me and my dogs, Taffy and <br>Nugget, at Camp Unleashed<br> in 2016</figcaption>
+                </figure>
+                <figure class="center">
+                    <img src="assets/meWIthACane-compressor.jpg", alt="Meghan walking with a cane with her service dog, Taffy">
+                    <figcaption>Me at a Warrior Ride event <br>with my service dog, Taffy, <br>in 2010.</figcaption>
+                </figure>
+                
+                
+                
+                /*
+.left {
+    clear:both;
+    float: left;
+    padding: 0 20px 20px 20px;
+}
+*/
+
+
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Meghan Duprey</title>
+    <script src="scripts/myScript.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles/styles.css">
+      <style>
+    
+      </style>
+  </head>
+  <body class="site">
+    <div class="wrapper">
+        
+            <section class="carousel-outer">
+                <section class="carousel">
+                    <div><span>1</span></div>
+                    <div><span>2</span></div>
+                    <div><span>3</span></div>
+                    <div><span>4</span></div>
+                    <div><span>5</span></div>
+                    <div><span>6</span></div>
+                    <div><span>7</span></div>
+                    <div><span>8</span></div>
+                    <div><span>9</span></div>
+                </section>
+                <span class="arrow left"><</span>
+                <span class="arrow right">></span>
+            </section>
+    </div>
+  </body>
+</html>
+
+
+REALLY simple slider 
+
+<script>
+    var i = 0; //start point
+    
+    var images = [];
+    
+    var time = 5000;
+    //Image list
+    
+    images[0] = "assets/meAndTaffy-compressor.jpg";
+    images[1] = "assets/meAndTheGirls-compressor.jpg";
+    images[2] = "assets/meWIthACane-compressor.jpg";
+    images[3] = "assets/meAndTheGirls-compressor.jpg";
+    
+    // Change Image
+    function changeImg(){
+        document.slide.src = images[i];
+
+        // Check If Index Is Under Max
+        if(i < images.length - 1){
+          // Add 1 to Index
+          i++; 
+        } else { 
+            // Reset Back To O
+            i = 0;
+        }
+
+	// Run function every x seconds
+	setTimeout("changeImg()", time);
+}
+
+// Run function when page loads
+window.onload=changeImg;
+</script>
+
+
+
+figData: [ 
+                {caption: "Me getting my diploma from the MMM Program at Syracuse University", src: "assets/ss/diploma.jpg"}, 
+               {caption: "My service dog, Taffy, and I at a Warrior Ride event", src: "assets/ss/meWIthACane.jpg"}, 
+               {caption: "My dogs, Taffy and Nugget, and I at Camp Unleashed", src: "assets/ss/meAndTaffy.jpg"}, 
+               {caption: "Skydiving!", src: "assets/ss/skydiving.jpg"}, 
+               {caption: "Me and my mom", src: "assets/ss/blues.jpg"}, 
+               {caption: "Camp Hope Unleashed", src: "assets/ss/camphope.jpg"}, 
+               {caption: "Deployed to Pakistan in 2003", src: "assets/ss/desert.jpg"}, 
+               {caption: "We love Halloween!", src: "assets/ss/halloween.jpg"}, 
+               {caption: "On a mission in Iraq", src: "assets/ss/helmet.jpg"}, 
+               {caption: "Kayaking with Taffy", src: "assets/ss/kayak2.jpg"}, 
+               {caption: "Movember with Moose", src: "assets/ss/movember.jpg"}, 
+               {caption: "Nugget!", src: "assets/ss/nugget.jpg"}, 
+               {caption: "Deployment to Saudi Arabia spring 2001", src: "assets/ss/saudi.jpg"}, 
+               {caption: "On our way to see the Statue of Liberty!", src: "assets/ss/statueofliberty.jpg"}, 
+               {caption: "Me and Jess at a Warrior Ride event"), src: "assets/ss/warriorride.jpg"})
+             ],
+
+
+
+<!--        Slideshow script-->
+   <!-- -----------------SLIDESHOW------------------->
+<!--
+           <section class="slideshow-container">
+                <figure class="slideshow-outer">
+                    <img id="figure-image" alt="" width="222">
+                    <figcaption id="figure-caption"></figcaption>
+                </figure>
+                <div id="controls">
+                    <button id="figure-previous-button" type="button" onclick="previous()" class="previous">&#8249;</button>
+                    <button id="figure-next-button" type="button"  onclick="next()" class="next">&#8250;</button>
+                </div>
+            </section>
+-->
+
+   <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+          var index = 0;
+          var figNextBtn = null;
+          var figPrevBtn = null;
+          var figImage = null;
+          var figCaption = null;
+          var slideShow = {
+            figData: [
+                { caption: "Getting my diploma from the MMM Program at Syracuse University", src: "assets/ss/diploma-compressor.jpg"},
+                { caption: "Me and my service dog, Taffy, at a Warrior Ride event", src: "assets/ss/meWIthACane-compressor.jpg" },
+                { caption: "Me and my mom", src: "assets/ss/blues.jpg" },
+                { caption: "Camp Hope Unleashed", src: "assets/ss/camphope.jpg" },
+                { caption: "Deployed to Pakistan in 2003", src: "assets/ss/desert.jpg" },
+                { caption: "On a mission in Iraq", src: "assets/ss/helmet.jpg" },
+                { caption: "Deployment to Saudi Arabia", src: "assets/ss/saudi.jpg" },
+                { caption: "Me and Jess at a Warrior Ride event", src: "assets/ss/warriorride.jpg" }
+            ],
+            init: function() {
+              figNextBtn = document.getElementById("figure-next-button");
+              figPrevBtn = document.getElementById("figure-previous-button");
+              figImage = document.getElementById("figure-image");
+              figCaption = document.getElementById("figure-caption");
+              figNextBtn.addEventListener('click', function(){
+                slideShow.goNext();
+              });
+              figPrevBtn.addEventListener('click', function(){
+                slideShow.goPrevious();
+              });
+              this.updateOutput(0);
+            },
+            goNext: function() {
+              index = (index >= this.figData.length - 1)? 0 : index+1;
+              this.updateOutput(index);
+            },
+            goPrevious: function() {
+              index = (index == 0)? this.figData.length - 1 : index-1;
+              this.updateOutput(index);
+            },
+            updateOutput: function(currentIndex){
+              figImage.src = this.figData[currentIndex].src;
+              figCaption.innerHTML = this.figData[currentIndex].caption;
+            }
+          };
+          slideShow.init();
+        });
+      </script>
+      <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+    color: #444;
+    font-family: 'Raleway', Open-Sans, Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='12' viewBox='0 0 20 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 12c0-.622-.095-1.221-.27-1.785A5.982 5.982 0 0 0 10 12c1.67 0 3.182-.683 4.27-1.785A5.998 5.998 0 0 0 14 12h2a4 4 0 0 1 4-4V6c-1.67 0-3.182.683-4.27 1.785C15.905 7.22 16 6.622 16 6c0-.622-.095-1.221-.27-1.785A5.982 5.982 0 0 0 20 6V4a4 4 0 0 1-4-4h-2c0 .622.095 1.221.27 1.785A5.982 5.982 0 0 0 10 0C8.33 0 6.818.683 5.73 1.785 5.905 1.22 6 .622 6 0H4a4 4 0 0 1-4 4v2c1.67 0 3.182.683 4.27 1.785A5.998 5.998 0 0 1 4 6c0-.622.095-1.221.27-1.785A5.982 5.982 0 0 1 0 6v2a4 4 0 0 1 4 4h2zm-4 0a2 2 0 0 0-2-2v2h2zm16 0a2 2 0 0 1 2-2v2h-2zM0 2a2 2 0 0 0 2-2H0v2zm20 0a2 2 0 0 1-2-2h2v2zm-10 8a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z' fill='%237b8f8d' fill-opacity='0.15' fill-rule='evenodd'/%3E%3C/svg%3E");
+    font-size: 18px;
+    margin: 0 auto;
+    max-width: 1200px;
+ }
+header {
+    background-color: #444;
+    border-radius: 5px 5px 0 0;
+    padding: 10px 20px;
+    height: 100px;
+}
+ a {
+     color: #7b8f8d;
+     text-decoration: none;
+ }
+nav a:hover {
+    background-color: #f4f4f5;
+    color: #444;
+  }
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+h1 {
+    font-size: 26px;
+    margin-bottom: 50px;
+}
+h2 {
+    margin-bottom: 30px;
+}
+hr {
+    border:none;
+    height: 20px;
+ 	width: 90%;
+	height: 50px;
+    border-bottom: 1px solid #1f1209;
+	box-shadow: 0 20px 20px -20px #333;
+    margin: 100px;
+ 	width: 80%;
+}
+ul {
+    list-style-type: none;
+}
+footer {
+    background-color: #444;
+    border-radius: 0 0 5px 5px;
+    font-family: 'Dawning of a New Day', cursive;
+    height: 75px;
+}
+article h2 {
+    font-weight: bold;
+}
+/*************CLASS STYLES*************/
+
+.wrapper {
+    background-color:  rgba(255, 255, 255, 0.75);
+    margin: 0 auto;
+    min-height: 100vh;
+    width: 80vw;
+    padding: 20px;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #7b8f8d;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+/************MAIN NAV************/
+header .navigation {
+    display: inline;
+    margin-left: auto;
+    text-align: right;
+}
+.navigation ul {
+    margin-top: -40px;
+}
+.navigation li {
+    color:  #fff;    
+    display: inline;
+    padding: 1px 3px 1px 0;
+}
+a:active {
+    background-color: #7b8f8d;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+}
+.navigation a {
+    color:  #fff;    
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.logo {
+    color:  #fff;
+    display: inline;
+    font-family: 'Dawning of a New Day', cursive;
+    font-size: 45px;
+    margin-top: 50px;
+/*    padding: 20px;*/
+    text-align: left;
+}
+.site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.site-content {
+    flex: 1;
+    min-height: 100vh;
+}
+.card {
+    background-color: #fff;
+    border: 2px solid rgba(0,0,0,0.5);
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.25);
+    margin: 0 auto 20px auto;
+    padding: 10px;
+    width: 80%;
+}
+.intro {
+    padding: 0 20px 0 20px;
+}
+.intro img {
+    display: none;
+}
+.intro li {
+    padding: 10px;
+}
+.flex-container {
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+/*    height: 400px;*/
+    justify-content: space-around;
+  }
+.flex-container .center {
+    width: 250px;
+}
+.center {
+    text-align: center;
+}
+.inline {
+    align-content: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 100%;
+}
+figure img {
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.25);
+}
+.heroImage img{
+    border: 2px solid rgba(0,0,0,0.5);
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.25);
+/*    display: flex;*/
+    margin: 0 auto;
+    -webkit-box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.25);
+}
+.heroImage figure {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.inline {
+    display: inline;
+}
+ /**************SLIDE SHOW**************/
+.slideshow-outer {
+}
+.slideshow-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 300px;
+}
+.slideshow-container img {
+    border: 2px solid rgba(0,0,0,0.5);
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.25);
+    height: 220px;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.25);
+}
+.slideshow-container figcaption {
+    text-align: center;
+    width: 300px;
+}
+.slideshow-container button {
+    display: inline-block;
+    padding: 5px 15px;
+}
+.slideshow-outer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.previous {
+    background-color: #7b8f8d;
+    color: #fff;
+    font-size: 50px;
+}
+.next {
+    background-color: 
+    color: #fff;
+    font-size: 50px;
+}
+
+/**************ACCORDION*************/
+#widgets {
+    margin: 0 auto;
+    width: 80%;
+}
+#widgets h3 {
+    font-size: 20px;
+}
+.ui-icon {
+    display: none;
+}
+.ui-accordion .ui-accordion-header {
+    padding-left: 30px;
+    text-align: left;
+}
+.ui-widget {
+    font-size: 16px;
+}
+.ui-widget-content a {
+    color: #7b8f8d;
+    text-decoration: underline;
+}       
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    background: none;
+    background-color: rgba(123, 143, 141, .1);
+}
+/**************CONTACT STYLES**************/
+.contact {
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%237b8f8d' fill-opacity='0.15'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    border: 2px solid rgba(0,0,0,0.5);
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.25);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px 0 10px 0;
+    padding: 1.5em;
+    width: 100%;
+}
+.contact .card {
+    padding: 10px;
+    width: 250px;
+}
+.card h2 {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.card a:hover {
+    text-decoration: underline;
+}
+/***************CONTACT FORM**************/
+.contact-form {
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%237b8f8d' fill-opacity='0.15'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    -webkit-box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.25);
+    border: 2px solid rgba(0,0,0,0.5);
+    border-radius: 5px;
+    margin: 15px 0 10px 0;
+    padding: 2em;
+}
+.contact-form input {
+    border-radius: 5px;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+}
+textarea {
+    border-radius: 5px;
+    font-size: 16px;
+    height: 8em;
+    margin-bottom: 10px;
+    padding: 1em;
+    width: 100%;
+}
+button {
+    background-color: #444;
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 1em;
+}
+input:invalid {
+    color: #f00;
+}
+input[type="email"] {
+      border-left: 2px solid #ff0000;
+}
+input:required:focus {
+  border: 1px solid red;
+  outline: none;
+}
+textarea {
+    border-left: 2px solid #ff0000;
+}
+textarea:focus {
+    border: 1px solid red;
+    outline: none;
+}
+/***********FOOTER NAV**********/
+footer a {
+    color: #fff;
+    display: block;
+    float: left;
+    font-family: 'Dawning of a New Day', cursive;
+    font-size: 20px;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+footer a:hover {
+  background-color: #ddd;
+  color: black;
+}
+footer .icon {
+  display: none;
+}
+footer .active {
+background-color: #333;
+}
+
+/***********MEDIA QUERIES***********/
+@media screen and (max-width: 850px) {
+    header {
+        height: 160px;
+    }
+    .logo {
+        display: block;
+        margin: 0 0 10px 0;
+    }
+    .icon {
+        display: block;
+    }
+    .navigation ul {
+    margin-top: 0;
+}
+}
+@media screen and (max-width: 600px) {
+    header {
+        height: 100px;
+        
+    }
+    .logo {
+        display: none;
+    }
+    .navigation ul {
+    margin-top: 15px;
+        padding-left: 0;
+        text-align: center;
+    }
+    .heroImage {
+        display: none;
+    }
+    .intro img {
+        display:block;
+    }
+    .icon {
+        border: none;
+    }
+    .icon h2 {
+        display: none;
+    }
+    footer .icon {
+        display: none;
+    }
+    .fa {
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header li {
+        display: block;
+    }
+/*
+    .column {
+      width: 100%;
+    }
+    .flex-container {
+        height: 800px;
+    }
+*/
+  }
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129788365-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-129788365-1');
+        </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5B8XPQJ');</script>
+    <!-- End Google Tag Manager -->
+    <meta name="description" content="A personal website about Meghan Duprey">
+    <meta name="robots" content="index,follow">
+    <meta name="google-site-verification" content="EtHFX7GYzlKJdDU6x0er_qGN9NS1Wu99UFGGXu3y0ZE" />
+    <title>Meghan Duprey</title>
+    <script src="scripts/myScript.js"></script>
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="scripts/ui/jquery-ui.min.css">
+    <script src="scripts/ui/jquery-ui.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script>
+        $( function() {
+            $("#widgets").accordion({ collapsible: true });
+        });
+    </script>
+    <style>
+        .mySlides {display:none;}
+    </style>
+
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5B8XPQJ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="wrapper">
+        <header>
+            <nav class="navigation">
+                <h1 class="logo">Meghan Duprey</h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>&middot;</li>
+                    <li><a href="index.html#doing_stuff">I'm Doing Stuff</a></li>
+                    <li>&middot;</li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li>&middot;</li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li>&middot;</li>
+                    <li class=""><a href="https://meghanmduprey.wordpress.com/" target="_blank">Blog</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+       <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <main class="site-content">
+            <h2>Who Am I?</h2>
+            <section class="heroImage center">
+                <figure>
+                    <img src="assets/meAndTheGirls-compressor.jpg" alt= "Meghan in Iraq with little girls">
+                    <figcaption>Me hanging out with some little girls on a mission in Iraq in 2008</figcaption>
+                </figure>
+            </section>
+            <section class="card intro">
+                <ul>
+                    <li>I’m a <em>student</em> at Asheville-Buncombe Technical Community College <br>in the Software and Web Development Program.</li>
+                    <li>I’m a <em>veteran</em>.</li>
+                    <li>I’m a <em>dog lover</em> and an <em>amateur gardener</em>.</li>
+                    <li>I’m an <em>idealist</em> and I have the <strong>dogged determination</strong> to achieve my goals.</li>
+                </ul>
+            </section>
+
+            <section class="flex-container">
+                <figure class="center">
+                    <img src="assets/ss/helmet.jpg" alt="On a mission in Iraq" style="height:220px">
+                    <figcaption>On a mission in Iraq</figcaption>
+                </figure> 
+                <figure class="center">
+                    <img src="assets/ss/meWIthACane-compressor.jpg" alt="Meghan walking with a cane with her service dog, Taffy">
+                    <figcaption>Me at a Warrior Ride event <br>with my service dog, Taffy, <br>in 2010.</figcaption>
+                </figure>
+          </section>
+               <article>
+                <h3>My Why</h3>
+                <section class="card intro">
+                <p>In a world where it can feel like we have no control, my goal is to help people realize their agency again through web and software driven community engagement.</p>
+                </section>
+            </article>
+            
+            <hr>
+            
+<!-- --------------I'M DOING STUFF PAGE------------------>
+            <a href="#doing_stuff"><h2 id="doing_stuff">What am I up to?</h2></a>
+
+            <article id="widgets">
+                <h3>I'm a student <br><img src="assets/abtech.png" alt="AB Tech logo"></h3>
+                <section>
+                    <p>As a student at Asheville-Buncombe Technical Community College in the <a href="https://www.abtech.edu/academics/academic-programs/business-and-hospitality-education/information-technology-software-and" target="_blank">Software and Web Development A.A.S. Program</a>, I’ve been on
+                    the <strong>President’s list</strong> every semester since I started attending.</p>
+                    <p>I'm also a member of the <strong>Phi Theta Kappa Honor Society</strong></p>
+                </section>
+
+                <h3>Code for Asheville<br> <img src="assets/code-for-asheville-condensed.png" alt= "Code For Asheville Logo" width="84" height="30"></h3>
+                <section>
+                    <p>I'm an active member of <a href="http://www.codeforasheville.org/" target="_blank">Code for Asheville</a>, a <strong>community volunteer civic technology organization</strong>.</p>
+                    <p>I am an <strong>editor for the bimonthly newsletter</strong> and write the section covering news from other Code for America brigades</p>
+                    <p>I participated in the effort to petition the Asheville City Council for <strong>Police Accountability Through Data Transparency</strong>, helping to collect <em>nearly 1000 signatures</em> from the community and disseminating information to the local press
+                    </p>
+                </section>
+
+                <h3>WordPress<br> <img src="assets/wordpressblue-compressor.png" alt= "Wordpress Logo" width="40" height="40"></h3>
+                <section>
+                    <p>I am <strong>redesigning</strong> the website for a local glass artist in WordPress</p>
+                    <p>In addition to this website, I also keep a <a href="https://meghanmduprey.wordpress.com/" target="_blank">Wordpress blog</a> to document my learning and compile lists of my favorite resources</p>
+                </section>
+
+                <h3>Rails<br> <img src="assets/rails-1.svg" alt= "Rails Logo" width="75" height="40"></h3>
+                <section>
+                    <p>In a break between classes, I took a class on Ruby on Rails</p>
+                    <p>I find it really cool and exciting and can't wait to learn more! I'm currently working with an adjunct professor at my school to <strong>redesign the look</strong> of his Rails website</p>
+                </section>
+
+                <h3>JavaScript<br> <img src="assets/js-squareyellow.png" alt="Javascript logo" width="40" height="40"></h3>
+                <section>
+                    <p>I am <strong>teaching myself</strong> JavaScript in my off time and really enjoy it</p>
+                    <p>I'm currently working on Wes Bos's <a href="https://javascript30.com/" target="_blank">JavaScript 30</a> course</p>
+                </section>
+            </article>
+            
+<!-- ----------------CONTACT PAGE------------------>
+       <hr>
+       <h2 id="contact">Where You Can Find Me:</h2>
+                <article class="contact">
+                    <section class="card">
+                        <a href="https://github.com/meghanduprey" target="_blank"><img src="assets/Octocat.png" alt="github logo"></a>
+                        <a href="https://github.com/meghanduprey" target="_blank"><h2>GitHub</h2></a>
+                    </section>
+
+                    <section class="card">
+                        <a href="https://meghanmduprey.wordpress.com/" target="_blank"><img src="assets/wordpressblue-compressor.png" width="80" height="80" alt="WordPress logo"></a>
+                        <a href="https://meghanmduprey.wordpress.com/" target="_blank"><h2>Blog</h2></a>
+                    </section>
+                    <section class="card">
+                        <a href="https://www.instagram.com/meghanduprey/" target="_blank"><img src="assets/instagramcolor.png" width="80" height="80" alt="Instagram logo"></a>
+                        <a href="https://www.instagram.com/meghanduprey/" target="_blank"><h2>Instagram</h2></a>
+                    </section>
+                </article>
+                <section class="contact-form">
+                    <form method="POST" action="https://formspree.io/meghan.duprey@gmail.com" name="contact" onsubmit="return validate()">
+                        <input type="text" name="name" placeholder="Your name">
+                        <input type="email" name="email" placeholder="Your email">
+                        <textarea name="message" placeholder="Your Message"></textarea>
+                        <button type="submit">Email Me!</button>
+                    </form>
+                </section>
+        </main>
+        <footer>
+            <nav class="topnav inline" id="myTopnav">
+                <a href="index.html"><img src="assets/copyrightscaled.png" alt="copyright" width="24" height="24"> MeghanDuprey.com 2018</a>
+                <a href="https://meghanmduprey.wordpress.com/" target="_blank"><img src="assets/wordpresswhitescaled.png" alt="wordpress logo" width="36" height="36"></a>
+                <a href="https://github.com/meghanduprey" target="_blank"><img src="assets/githubwhitescaled.png" alt="github logo" width="35" height="35"></a>
+            </nav>
+        </footer>
+    </div>
+      <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("myBtn").style.display = "block";
+                } else {
+                    document.getElementById("myBtn").style.display = "none";
+                }
+            }
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129788365-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129788365-1');
+        </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5B8XPQJ');</script>
+    <!-- End Google Tag Manager -->
+    <meta name="description" content="A personal website about Meghan Duprey">
+    <meta name="robots" content="index,follow">
+    <meta name="google-site-verification" content="EtHFX7GYzlKJdDU6x0er_qGN9NS1Wu99UFGGXu3y0ZE" />
+    <title>Meghan Duprey</title>
+    <script src="scripts/myScript.js"></script>
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="scripts/ui/jquery-ui.min.css">
+    <script src="scripts/ui/jquery-ui.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script>
+        $( function() {
+            $("#widgets").accordion({ collapsible: true });
+        });
+    </script>
+    <style>
+        .mySlides {display:none;}
+    </style>
+
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5B8XPQJ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="wrapper">
+        <header>
+            <nav class="navigation">
+                <h1 class="logo">Meghan Duprey</h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>&middot;</li>
+                    <li><a href="index.html#doing_stuff">I'm Doing Stuff</a></li>
+                    <li>&middot;</li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li>&middot;</li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li>&middot;</li>
+                    <li class=""><a href="https://meghanmduprey.wordpress.com/" target="_blank">Blog</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+       <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+                   <section class="flex-container">
+                <figure class="center">
+                    <img src= "assets/ss/diploma-compressor.jpg" alt= "Getting my diploma from the MMM Program at Syracuse University" style="height:220px">
+                    <figcaption>Getting my diploma from the MMM Program at Syracuse University</figcaption>
+                </figure>
+                <figure class="center">  
+                    <img src="assets/ss/meWIthACane-compressor.jpg" alt="My service dog, Taffy, and I at a Warrior Ride event" style="height:220px">
+                    <figcaption>My service dog, Taffy, and I at a Warrior Ride event</figcaption>
+                </figure>  
+                <figure class="center">
+                    <img src="assets/ss/meAndTaffy-compressor.jpg" alt="My dogs, Taffy and Nugget, and I at Camp Unleashed"  style="height:220px">
+                    <figcaption>My dogs, Taffy and Nugget, and I at Camp Unleashed</figcaption>
+                </figure>
+                <figure class="center">
+                    <img src="assets/ss/skydiving.jpg" alt="Skydiving!"  style="height:220px">
+                    <figcaption>Skydiving</figcaption>
+                </figure> 
+                <figure class="center">
+                    <img src="assets/ss/blues.jpg" alt="Me and my mom" style="height:220px">
+                    <figcaption>Me and my mom</figcaption>
+                </figure> 
+                <figure class="center">
+                    <img src="assets/ss/camphope.jpg" alt="Camp Hope Unleashed group picture" style="height:220px">
+                    <figcaption>Camp Hope Unleashed</figcaption>
+                </figure> 
+                <figure class="center">
+                    <img src="assets/ss/desert.jpg" alt="Deployed to Pakistan in 2003" style="height:220px">
+                    <figcaption>Deployed to Pakistan in 2003</figcaption>
+                </figure> 
+                <figure class="center">
+                    <img src="assets/ss/halloween.jpg" alt="Moose and Taffy in Halloween costumes" style="height:220px">
+                    <figcaption>We love Halloween</figcaption>
+                </figure> 
+                <figure class="center">
+                    <img src="assets/ss/helmet.jpg" alt="On a mission in Iraq" style="height:220px">
+                    <figcaption>On a mission in Iraq</figcaption>
+                </figure> 
+                <figure class="center">
+                    <img src="assets/ss/kayak2.jpg" alt="Kayaking with Taffy" style="height:220px">
+                    <figcaption>Kayaking with Taffy</figcaption>
+                </figure> 
+                <figure class="center">
+                    <img src= "assets/ss/movember.jpg" alt="Moose with a fake mustache on" style="height:220px">
+                    <figcaption>Movember with Moose</figcaption>
+                </figure> 
+                    <figure class="center">
+                <img src="assets/ss/nugget.jpg" alt="Nugget!" style="height:220px">
+                    <figcaption>Nugget!</figcaption>
+                </figure> 
+                <figure class="center">
+                    <img src="assets/ss/saudi.jpg" alt="Deployment to Saudi Arabia spring 2001" style="height:220px">
+                    <figcaption>Deployment to Saudi Arabia spring 2001</figcaption>
+                </figure> 
+                <figure class="center">
+                    <img src="assets/ss/statueofliberty.jpg" alt="On our way to see the Statue of Liberty!" style="height:220px">
+                    <figcaption>On our way to see the Statue of Liberty</figcaption>
+                </figure> 
+                <figure class="center">
+                    <img src="assets/ss/warriorride.jpg" alt="Me and Jess at a Warrior Ride event" style="height:220px">
+                    <figcaption>Me and Jess at a Warrior Ride event</figcaption>
+                </figure> 
+
+          </section>
+    <footer>
+        <nav class="topnav inline" id="myTopnav">
+            <a href="index.html"><img src="assets/copyrightscaled.png" alt="copyright" width="24" height="24"> MeghanDuprey.com 2018</a>
+            <a href="https://meghanmduprey.wordpress.com/" target="_blank"><img src="assets/wordpresswhitescaled.png" alt="wordpress logo" width="36" height="36"></a>
+            <a href="https://github.com/meghanduprey" target="_blank"><img src="assets/githubwhitescaled.png" alt="github logo" width="35" height="35"></a>
+        </nav>
+    </footer>
+</div>
+  <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+</script>
+</body>
+</html>
+
+

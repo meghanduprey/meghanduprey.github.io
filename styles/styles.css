@@ -23,7 +23,6 @@ header {
 nav a:hover {
     background-color: #f4f4f5;
     color: #444;
-    text-transform: uppercase;
   }
 h1,
 h2,
@@ -46,6 +45,9 @@ hr {
 	box-shadow: 0 20px 20px -20px #333;
     margin: 100px;
  	width: 80%;
+}
+ul {
+    list-style-type: none;
 }
 footer {
     background-color: #444;
@@ -148,10 +150,6 @@ a:active {
 .intro li {
     padding: 10px;
 }
-.green {
-    color: #7b8f8d;
-    font-weight: bold;
-}
 .flex-container {
     align-content: center;
     display: flex;
@@ -235,21 +233,25 @@ figure img {
     font-size: 50px;
 }
 .next {
-    background-color: #7b8f8d;
+    background-color: 
     color: #fff;
     font-size: 50px;
 }
 
 /**************ACCORDION*************/
+#widgets {
+    margin: 0 auto;
+    width: 80%;
+}
 #widgets h3 {
     font-size: 20px;
-    font-weight: bold;
 }
 .ui-icon {
     display: none;
 }
 .ui-accordion .ui-accordion-header {
-    text-align: center;
+    padding-left: 30px;
+    text-align: left;
 }
 .ui-widget {
     font-size: 16px;
@@ -258,7 +260,10 @@ figure img {
     color: #7b8f8d;
     text-decoration: underline;
 }       
-
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    background: none;
+    background-color: rgba(123, 143, 141, .1);
+}
 /**************CONTACT STYLES**************/
 .contact {
     background-color: #ffffff;
@@ -283,7 +288,6 @@ figure img {
 }
 .card a:hover {
     text-decoration: underline;
-    text-transform: uppercase;
 }
 /***************CONTACT FORM**************/
 .contact-form {
@@ -365,6 +369,9 @@ background-color: #333;
     header {
         height: 160px;
     }
+    .navigation ul {
+        margin-top: -5px;
+    }
     .logo {
         display: block;
         margin: 0 0 10px 0;
@@ -372,22 +379,24 @@ background-color: #333;
     .icon {
         display: block;
     }
-    .navigation ul {
-    margin-top: 0;
-}
+    .card.intro ul {
+        padding-left: 0;
+    }
+    hr {
+        border-bottom: none;
+        height: 0;
+    }
 }
 @media screen and (max-width: 600px) {
     header {
-        height: 100px;
-        
+        height: 250px;  
+    }
+    .navigation li {
+        display: block;
+        text-align: left;
     }
     .logo {
         display: none;
-    }
-    .navigation ul {
-    margin-top: 15px;
-        padding-left: 0;
-        text-align: center;
     }
     .heroImage {
         display: none;
@@ -401,12 +410,16 @@ background-color: #333;
     .icon h2 {
         display: none;
     }
+    footer {
+        height: 200px;
+    }
     footer .icon {
         display: none;
     }
     .fa {
         color: #fff;
     }
+
 }
 
 @media screen and (max-width: 400px) {
