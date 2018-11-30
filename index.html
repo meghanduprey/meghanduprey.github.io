@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129788365-1"></script>
         <script>
@@ -22,7 +22,6 @@
     <meta name="robots" content="index,follow">
     <meta name="google-site-verification" content="EtHFX7GYzlKJdDU6x0er_qGN9NS1Wu99UFGGXu3y0ZE" />
     <title>Meghan Duprey</title>
-    <script src="scripts/myScript.js"></script>
     <script src="scripts/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="scripts/ui/jquery-ui.min.css">
     <script src="scripts/ui/jquery-ui.js"></script>
@@ -35,6 +34,51 @@
             $("#widgets").accordion({ collapsible: true });
         });
     </script>
+<!--     HAMBURGER MENU-->
+      <script>
+      $(function(){
+          var width   = 200,
+              height  = 220,
+              speed   = 300,
+              button  = $('#menu-button'),
+              overlay = $('#overlay'),
+              menu    = $('#hamburger-menu');
+
+          button.on('click',function(e){
+            if(overlay.hasClass('open')) {
+              animate_menu('close');
+            } else {
+              animate_menu('open');
+            }
+          });
+
+          overlay.on('click', function(e){
+            if(overlay.hasClass('open')) {
+              animate_menu('close');
+            }
+          });
+
+          $('a[href="#"]').on('click', function(e){
+            e.preventDefault();
+          });
+
+          function animate_menu(menu_toggle) {
+            if(menu_toggle == 'open') {
+              overlay.addClass('open');
+              button.addClass('on');
+              overlay.animate({opacity: 1}, speed);
+              menu.animate({width: width, height: height}, speed);
+            }
+
+            if(menu_toggle == 'close') {
+              button.removeClass('on');
+              overlay.animate({opacity: 0}, speed);
+              overlay.removeClass('open');
+              menu.animate({width: "0", height: 0}, speed);
+            }
+          }
+        });
+      </script>
     <style>
         .mySlides {display:none;}
     </style>
@@ -47,21 +91,38 @@
     <!-- End Google Tag Manager (noscript) -->
     <div class="wrapper">
         <header>
-            <nav class="navigation">
-                <h1 class="logo">Meghan Duprey</h1>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li>&middot;</li>
-                    <li><a href="index.html#doing_stuff">I'm Doing Stuff</a></li>
-                    <li>&middot;</li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li>&middot;</li>
-                    <li><a href="index.html#contact">Contact</a></li>
-                    <li>&middot;</li>
-                    <li class=""><a href="https://meghanmduprey.wordpress.com/" target="_blank">Blog</a></li>
-                    
-                </ul>
-            </nav>
+            <div id="main-nav">
+               <nav class="navigation">
+                    <h1 class="logo">Meghan Duprey</h1>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li>&middot;</li>
+                        <li><a href="index.html#doing_stuff" title="I'm Doing Stuff">I'm Doing Stuff</a></li>
+                        <li>&middot;</li>
+                        <li><a href="gallery.html" title="Gallery">Gallery</a></li>
+                        <li>&middot;</li>
+                        <li><a href="index.html#contact" title="Contact Me">Contact</a></li>
+                        <li>&middot;</li>
+                        <li class=""><a href="https://meghanmduprey.wordpress.com/" target="_blank">Blog</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+            <div id="hamburger">
+            <a id="menu-button"></a>
+            <div id="hamburger-menu">
+                <nav class="navigation">
+                    <a href="index.html">Home</a>
+                    <a href="index.html#doing_stuff" title="I'm Doing Stuff">I'm Doing Stuff</a>
+                    <a href="gallery.html" title="Gallery">Gallery</a>
+                    <a href="index.html#contact" title="Contact Me">Contact</a>
+                    <a href="https://meghanmduprey.wordpress.com/" target="_blank">WordPress Blog</a>
+                </nav>
+            </div>
+            <div id="overlay"></div>
+            </div>
+
+
         </header>
        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
         <main class="site-content">
@@ -139,8 +200,9 @@
             </article>
             
 <!-- ----------------CONTACT PAGE------------------>
-       <hr>
-       <h2 id="contact">Where You Can Find Me:</h2>
+           <hr>
+           <div id="contact">
+               <h2>Where You Can Find Me:</h2>
                 <article class="contact">
                     <section class="card">
                         <a href="https://github.com/meghanduprey" target="_blank"><img src="assets/Octocat.png" alt="github logo"></a>
@@ -164,15 +226,17 @@
                         <button type="submit">Email Me!</button>
                     </form>
                 </section>
+            </div>
         </main>
         <footer>
-            <nav class="topnav inline" id="myTopnav">
+            <nav class="inline">
                 <a href="index.html"><img src="assets/copyrightscaled.png" alt="copyright" width="24" height="24"> MeghanDuprey.com 2018</a>
                 <a href="https://meghanmduprey.wordpress.com/" target="_blank"><img src="assets/wordpresswhitescaled.png" alt="wordpress logo" width="36" height="36"></a>
                 <a href="https://github.com/meghanduprey" target="_blank"><img src="assets/githubwhitescaled.png" alt="github logo" width="35" height="35"></a>
             </nav>
         </footer>
     </div>
+<!--     SCROLL TO TOP SCRIPT-->
       <script>
             // When the user scrolls down 20px from the top of the document, show the button
             window.onscroll = function() {scrollFunction()};
@@ -189,5 +253,6 @@
                 document.documentElement.scrollTop = 0;
             }
     </script>
+
 </body>
 </html>
