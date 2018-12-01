@@ -79,7 +79,7 @@ article h2 {
   display: block;
   width: 50px;
   height: 50px;
-  background: #111;
+  background: #fff;
   border-radius: 5px;
   z-index: 200;
 }
@@ -87,7 +87,7 @@ article h2 {
   position: absolute;
   content: "☰";
   font-size: 42px;
-  color: #FFF;
+  color: #444;
   width: 50px;
   height: 50px;
   text-align: center;
@@ -121,7 +121,7 @@ article h2 {
 #hamburger-menu {
   height: 0;
   width: 0;
-  background: #111;
+  background-color: #fff;
   position: fixed;
   top: 20px;
   left: 90px;
@@ -139,7 +139,7 @@ article h2 {
   display: block;
   padding: 10px;
 /*  height: 1em;*/
-  color: #CCC;
+  color: #444;
   font-size: 1em;
   line-height: 1em;
   text-decoration: none;
