@@ -23,6 +23,7 @@ header {
 nav a:hover {
     background-color: #f4f4f5;
     color: #444;
+    cursor: pointer;
   }
 h1,
 h2,
