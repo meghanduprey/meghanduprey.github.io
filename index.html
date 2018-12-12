@@ -1,213 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129788365-1"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-129788365-1');
-        </script>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-5B8XPQJ');</script>
-    <!-- End Google Tag Manager -->
-    <meta name="description" content="A personal website about Meghan Duprey">
-    <meta name="robots" content="index,follow">
-    <meta name="google-site-verification" content="EtHFX7GYzlKJdDU6x0er_qGN9NS1Wu99UFGGXu3y0ZE" />
-    <title>Meghan Duprey</title>
-    <script src="scripts/jquery-3.3.1.min.js"></script>
-    <link rel="stylesheet" href="scripts/ui/jquery-ui.min.css">
-    <script src="scripts/ui/jquery-ui.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script>
-        $( function() {
-            $("#widgets").accordion({ collapsible: true });
-        });
-    </script>
-<!--     HAMBURGER MENU-->
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129788365-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "UA-129788365-1");
+  </script>
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        "gtm.start": new Date().getTime(),
+        event: "gtm.js"
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-5B8XPQJ");
+  </script>
+  <!-- End Google Tag Manager -->
+  <meta name="description" content="A personal website about Meghan Duprey" />
+  <meta name="robots" content="index,follow" />
+  <meta name="google-site-verification" content="EtHFX7GYzlKJdDU6x0er_qGN9NS1Wu99UFGGXu3y0ZE" />
+  <title>Meghan Duprey</title>
+  <script src="scripts/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="scripts/ui/jquery-ui.min.css" />
+  <script src="scripts/ui/jquery-ui.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <script>
+    $(function () {
+      $("#widgets").accordion({
+        collapsible: true
+      });
+    });
+  </script>
+  <!-- tabs -->
+  <script>
+    $(function () {
+      $("#tabs").tabs();
+    });
+  </script>
+  <!-- DIV JUMP -->
+  <!--
       <script>
- 
       </script>
-<!--      DIV JUMP-->
-<!--
-       <script>
-       </script>   
--->
-    <style>
-        .mySlides {display:none;}
-    </style>
+    -->
+</head>
 
-  </head>
-  <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5B8XPQJ"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <div class="wrapper">
-        <header>
-            <div id="main-nav">
-               <nav class="navigation">
-                    <h1 class="logo">Meghan Duprey</h1>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li>&middot;</li>
-                        <li><a onclick="jump('doing_stuff')">I'm Doing Stuff</a></li>
-                        <li>&middot;</li>
-<!--
-                        <li><a href="gallery.html" title="Gallery">Gallery</a></li>
-                        <li>&middot;</li>
--->
-                        <li><a onclick="jump('contact')">Contact</a></li>
-                        <li>&middot;</li>
-                        <li class=""><a href="https://meghanmduprey.wordpress.com/" target="_blank">Blog</a></li>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5B8XPQJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div class="wrapper">
+    <header>
+      <div id="main-nav">
+        <nav class="navigation">
+          <h1 class="logo">Meghan Duprey</h1>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>&middot;</li>
+            <li><a href="doing_stuff.html">I'm Doing Stuff</a></li>
+            <li>&middot;</li>
+            <li><a href="projects.html">Projects</a></li>
+            <li>&middot;</li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>&middot;</li>
+            <li class="">
+              <a href="https://meghanmduprey.wordpress.com/" target="_blank">Blog</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div id="hamburger">
+        <a id="menu-button"></a>
+        <div id="hamburger-menu">
+          <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="doing_stuff.html">I'm Doing Stuff</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+            <a href="https://meghanmduprey.wordpress.com/" target="_blank">WordPress Blog</a>
+          </nav>
+        </div>
+        <div id="overlay"></div>
+      </div>
+    </header>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <main class="site-content">
+      <h2>Who Am I?</h2>
+      <section class="heroImage center">
+        <figure>
+          <img src="assets/meAndTheGirls-compressor.jpg" alt="Meghan in Iraq with little girls" />
+          <figcaption>
+            Me hanging out with some little girls on a mission in Iraq in 2008
+          </figcaption>
+        </figure>
+      </section>
+      <section class="card intro">
+        <ul>
+          <li>
+            I’m a <em>student</em> at Asheville-Buncombe Technical Community
+            College <br />in the Software and Web Development Program.
+          </li>
+          <li>I’m a <em>veteran</em>.</li>
+          <li>I’m a <em>dog lover</em> and an <em>amateur gardener</em>.</li>
+          <li>
+            I’m an <em>idealist</em> and I have the
+            <strong>dogged determination</strong> to achieve my goals.
+          </li>
+        </ul>
+      </section>
 
-                    </ul>
-                </nav>
-            </div>
-            <div id="hamburger">
-            <a id="menu-button"></a>
-            <div id="hamburger-menu">
-                <nav class="navigation">
-                    <a href="index.html">Home</a>
-                    <a onclick="jump('doing_stuff')">I'm Doing Stuff</a>
-<!--                    <a href="gallery.html" title="Gallery">Gallery</a>-->
-                    <a onclick="jump('contact')">Contact</a>
-                    <a href="https://meghanmduprey.wordpress.com/" target="_blank">WordPress Blog</a>
-                </nav>
-            </div>
-            <div id="overlay"></div>
-            </div>
+      <section class="flex-container">
+        <figure class="center">
+          <img src="assets/ss/helmet.jpg" alt="On a mission in Iraq" style="height:220px" />
+          <figcaption>On a mission in Iraq</figcaption>
+        </figure>
+        <figure class="center">
+          <img src="assets/ss/warriorride.jpg" alt="Meghan walking with a cane with her service dog, Taffy" />
+          <figcaption>
+            At a Warrior Ride event <br />with my service dog, Taffy,
+            <br />in 2010.
+          </figcaption>
+        </figure>
+        <figure class="center">
+          <img src="assets/ss/kayak2.jpg" alt="Meghan kayaking with her service dog, Taffy" />
+          <figcaption>
+            At Camp Unleashed <br />with my service dog, Taffy.
+          </figcaption>
+        </figure>
+      </section>
 
+      <h2>Careers</h2>
+      <article class="careers">
+        <section class="about">
+          <h3>Student/Developer</h3>
+          <p>I love figuring out how things work and get really excited when I hunt down errant code or make something
+            look pretty.</p>
+          <p>My favorite tutorials are by <a href="https://watchandcode.com/" target="_blank">Gordon Zhu</a>, <a href="https://www.youtube.com/watch?v=jgw82b5Y2MU"
+              target="_blank">The Net Ninja</a>, and
+            <a href="https://javascript30.com/" target="_blank">Wes Bos</a>.</p>
 
-        </header>
-       <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-        <main class="site-content">
-            <h2>Who Am I?</h2>
-            <section class="heroImage center">
-                <figure>
-                    <img src="assets/meAndTheGirls-compressor.jpg" alt= "Meghan in Iraq with little girls">
-                    <figcaption>Me hanging out with some little girls on a mission in Iraq in 2008</figcaption>
-                </figure>
-            </section>
-            <section class="card intro">
-                <ul>
-                    <li>I’m a <em>student</em> at Asheville-Buncombe Technical Community College <br>in the Software and Web Development Program.</li>
-                    <li>I’m a <em>veteran</em>.</li>
-                    <li>I’m a <em>dog lover</em> and an <em>amateur gardener</em>.</li>
-                    <li>I’m an <em>idealist</em> and I have the <strong>dogged determination</strong> to achieve my goals.</li>
-                </ul>
-            </section>
+          <p><strong>var languages_I_speak =</strong> ["HTML", "CSS", "Ruby on Rails", "JavaScript", "WordPress",
+            "Human"];</p>
+        </section>
+        <section class="about">
+          <h3>Veteran</h3>
+          <p>I spent 10 years in the United State Air Force. I started my career as a computer operator/deployable
+            telephone switch programmer and retrained into videography.</p>
+          <p>I've been stationed at
+            <ul>
+              <li>Offutt AFB, NE</li>
+              <li>RAF Lakenheath, UK</li>
+              <li>Nellis AFB, NV</li>
+              <li>Fort Meade, MD</li>
+              <li>Charleston AFB, SC</li>
+            </ul>
+            and deployed to
+            <ul>
+              <li>Saudi Arabia</li>
+              <li>Pakistan</li>
+              <li>Romania</li>
+              <li>Iraq</li>
+            </ul>
+          </p>
+        </section>
+      </article>
+      <article>
+        <h2>My Why</h2>
+        <section class="card intro">
+          <p>
+            In a world where it can feel like we have no control, my goal is
+            to help people realize their agency again through web and software
+            driven community engagement.
+          </p>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <nav class="inline">
+        <a href="index.html"><img src="assets/copyrightscaled.png" alt="copyright" width="24" height="24" />
+          MeghanDuprey.com 2018</a>
+        <a href="https://meghanmduprey.wordpress.com/" target="_blank"><img src="assets/wordpresswhitescaled.png" alt="wordpress logo"
+            width="36" height="36" /></a>
 
-            <section class="flex-container">
-                <figure class="center">
-                    <img src="assets/ss/helmet.jpg" alt="On a mission in Iraq" style="height:220px">
-                    <figcaption>On a mission in Iraq</figcaption>
-                </figure> 
-                <figure class="center">
-                    <img src="assets/ss/meWIthACane-compressor.jpg" alt="Meghan walking with a cane with her service dog, Taffy">
-                    <figcaption>Me at a Warrior Ride event <br>with my service dog, Taffy, <br>in 2010.</figcaption>
-                </figure>
-          </section>
-               <article>
-                <h3>My Why</h3>
-                <section class="card intro">
-                <p>In a world where it can feel like we have no control, my goal is to help people realize their agency again through web and software driven community engagement.</p>
-                </section>
-            </article>
-            
-            <hr>
-            
-<!-- --------------I'M DOING STUFF PAGE------------------>
-            <a href="#doing_stuff"><h2 id="doing_stuff">What am I up to?</h2></a>
+        <a href="https://github.com/meghanduprey" target="_blank"><img src="assets/githubwhitescaled.png" alt="github logo"
+            width="35" height="35" /></a>
+      </nav>
+    </footer>
+  </div>
 
-            <article id="widgets">
-                <h3>I'm a student <br><img src="assets/abtech.png" alt="AB Tech logo"></h3>
-                <section>
-                    <p>As a student at Asheville-Buncombe Technical Community College in the <a href="https://www.abtech.edu/academics/academic-programs/business-and-hospitality-education/information-technology-software-and" target="_blank">Software and Web Development A.A.S. Program</a>, I’ve been on
-                    the <strong>President’s list</strong> every semester since I started attending.</p>
-                    <p>I'm also a member of the <strong>Phi Theta Kappa Honor Society</strong></p>
-                </section>
+  <!--
+        <script>
 
-                <h3>Code for Asheville<br> <img src="assets/code-for-asheville-condensed.png" alt= "Code For Asheville Logo" width="84" height="30"></h3>
-                <section>
-                    <p>I'm an active member of <a href="http://www.codeforasheville.org/" target="_blank">Code for Asheville</a>, a <strong>community volunteer civic technology organization</strong>.</p>
-                    <p>I am an <strong>editor for the bimonthly newsletter</strong> and write the section covering news from other Code for America brigades</p>
-                    <p>I participated in the effort to petition the Asheville City Council for <strong>Police Accountability Through Data Transparency</strong>, helping to collect <em>nearly 1000 signatures</em> from the community and disseminating information to the local press
-                    </p>
-                </section>
-
-                <h3>WordPress<br> <img src="assets/wordpressblue-compressor.png" alt= "Wordpress Logo" width="40" height="40"></h3>
-                <section>
-                    <p>I am <strong>redesigning</strong> the website for a local glass artist in WordPress</p>
-                    <p>In addition to this website, I also keep a <a href="https://meghanmduprey.wordpress.com/" target="_blank">Wordpress blog</a> to document my learning and compile lists of my favorite resources</p>
-                </section>
-
-                <h3>Rails<br> <img src="assets/rails-1.svg" alt= "Rails Logo" width="75" height="40"></h3>
-                <section>
-                    <p>In a break between classes, I took a class on Ruby on Rails</p>
-                    <p>I find it really cool and exciting and can't wait to learn more! I'm currently working with an adjunct professor at my school to <strong>redesign the look</strong> of his Rails website</p>
-                </section>
-
-                <h3>JavaScript<br> <img src="assets/js-squareyellow.png" alt="Javascript logo" width="40" height="40"></h3>
-                <section>
-                    <p>I am <strong>teaching myself</strong> JavaScript in my off time and really enjoy it</p>
-                    <p>I'm currently working on Wes Bos's <a href="https://javascript30.com/" target="_blank">JavaScript 30</a> course</p>
-                </section>
-            </article>
-            
-<!-- ----------------CONTACT PAGE------------------>
-           <hr>
-           <div id="contact">
-               <h2>Where You Can Find Me:</h2>
-                <article class="contact">
-                    <section class="card">
-                        <a href="https://github.com/meghanduprey" target="_blank"><img src="assets/Octocat.png" alt="github logo"></a>
-                        <a href="https://github.com/meghanduprey" target="_blank"><h2>GitHub</h2></a>
-                    </section>
-
-                    <section class="card">
-                        <a href="https://meghanmduprey.wordpress.com/" target="_blank"><img src="assets/wordpressblue-compressor.png" width="80" height="80" alt="WordPress logo"></a>
-                        <a href="https://meghanmduprey.wordpress.com/" target="_blank"><h2>Blog</h2></a>
-                    </section>
-                    <section class="card">
-                        <a href="https://www.instagram.com/meghanduprey/" target="_blank"><img src="assets/instagramcolor.png" width="80" height="80" alt="Instagram logo"></a>
-                        <a href="https://www.instagram.com/meghanduprey/" target="_blank"><h2>Instagram</h2></a>
-                    </section>
-                </article>
-                <section class="contact-form">
-                    <form method="POST" action="https://formspree.io/meghan.duprey@gmail.com" name="contact" onsubmit="return validate()">
-                        <input type="text" name="name" placeholder="Your name">
-                        <input type="email" name="email" placeholder="Your email">
-                        <textarea name="message" placeholder="Your Message"></textarea>
-                        <button type="submit">Email Me!</button>
-                    </form>
-                </section>
-            </div>
-        </main>
-        <footer>
-            <nav class="inline">
-                <a href="index.html"><img src="assets/copyrightscaled.png" alt="copyright" width="24" height="24"> MeghanDuprey.com 2018</a>
-                <a href="https://meghanmduprey.wordpress.com/" target="_blank"><img src="assets/wordpresswhitescaled.png" alt="wordpress logo" width="36" height="36"></a>
-                <a href="https://github.com/meghanduprey" target="_blank"><img src="assets/githubwhitescaled.png" alt="github logo" width="35" height="35"></a>
-            </nav>
-        </footer>
-    </div>
-
-<!--
-      <script>
-            
-    </script>
--->
-    <script src="scripts/myScript.js"></script>
+      </script>
+    -->
+  <script src="scripts/myScript.js"></script>
 </body>
+
 </html>
