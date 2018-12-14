@@ -6,7 +6,9 @@
 
 body {
     background-color: #ffffff;
-    background-image: url("data:image/svg+xml,%3Csvg width='20' height='12' viewBox='0 0 20 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 12c0-.622-.095-1.221-.27-1.785A5.982 5.982 0 0 0 10 12c1.67 0 3.182-.683 4.27-1.785A5.998 5.998 0 0 0 14 12h2a4 4 0 0 1 4-4V6c-1.67 0-3.182.683-4.27 1.785C15.905 7.22 16 6.622 16 6c0-.622-.095-1.221-.27-1.785A5.982 5.982 0 0 0 20 6V4a4 4 0 0 1-4-4h-2c0 .622.095 1.221.27 1.785A5.982 5.982 0 0 0 10 0C8.33 0 6.818.683 5.73 1.785 5.905 1.22 6 .622 6 0H4a4 4 0 0 1-4 4v2c1.67 0 3.182.683 4.27 1.785A5.998 5.998 0 0 1 4 6c0-.622.095-1.221.27-1.785A5.982 5.982 0 0 1 0 6v2a4 4 0 0 1 4 4h2zm-4 0a2 2 0 0 0-2-2v2h2zm16 0a2 2 0 0 1 2-2v2h-2zM0 2a2 2 0 0 0 2-2H0v2zm20 0a2 2 0 0 1-2-2h2v2zm-10 8a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z' fill='%237b8f8d' fill-opacity='0.15' fill-rule='evenodd'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='72' height='36' viewBox='0 0 72 36'%3E%3Cdefs%3E%3Crect stroke='%23ffffff' stroke-width='0.11' width='1' height='1' id='s'/%3E%3Cpattern id='a' width='2' height='2' patternUnits='userSpaceOnUse'%3E%3Cg stroke='%23ffffff' stroke-width='0.11'%3E%3Crect fill='%23fafafa' width='1' height='1'/%3E%3Crect fill='%23ffffff' width='1' height='1' x='1' y='1'/%3E%3Crect fill='%23f5f5f5' width='1' height='1' y='1'/%3E%3Crect fill='%23f0f0f0' width='1' height='1' x='1'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='b' width='5' height='11' patternUnits='userSpaceOnUse'%3E%3Cg fill='%23ebebeb'%3E%3Cuse xlink:href='%23s' x='2' y='0'/%3E%3Cuse xlink:href='%23s' x='4' y='1'/%3E%3Cuse xlink:href='%23s' x='1' y='2'/%3E%3Cuse xlink:href='%23s' x='2' y='4'/%3E%3Cuse xlink:href='%23s' x='4' y='6'/%3E%3Cuse xlink:href='%23s' x='0' y='8'/%3E%3Cuse xlink:href='%23s' x='3' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='c' width='7' height='7' patternUnits='userSpaceOnUse'%3E%3Cg fill='%23e5e5e5'%3E%3Cuse xlink:href='%23s' x='1' y='1'/%3E%3Cuse xlink:href='%23s' x='3' y='4'/%3E%3Cuse xlink:href='%23s' x='5' y='6'/%3E%3Cuse xlink:href='%23s' x='0' y='3'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='d' width='11' height='5' patternUnits='userSpaceOnUse'%3E%3Cg fill='%23ffffff'%3E%3Cuse xlink:href='%23s' x='1' y='1'/%3E%3Cuse xlink:href='%23s' x='6' y='3'/%3E%3Cuse xlink:href='%23s' x='8' y='2'/%3E%3Cuse xlink:href='%23s' x='3' y='0'/%3E%3Cuse xlink:href='%23s' x='0' y='3'/%3E%3C/g%3E%3Cg fill='%23e0e0e0'%3E%3Cuse xlink:href='%23s' x='8' y='3'/%3E%3Cuse xlink:href='%23s' x='4' y='2'/%3E%3Cuse xlink:href='%23s' x='5' y='4'/%3E%3Cuse xlink:href='%23s' x='10' y='0'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='e' width='47' height='23' patternUnits='userSpaceOnUse'%3E%3Cg fill='%237b8f8d'%3E%3Cuse xlink:href='%23s' x='2' y='5'/%3E%3Cuse xlink:href='%23s' x='23' y='13'/%3E%3Cuse xlink:href='%23s' x='4' y='18'/%3E%3Cuse xlink:href='%23s' x='35' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='f' width='61' height='31' patternUnits='userSpaceOnUse'%3E%3Cg fill='%237b8f8d'%3E%3Cuse xlink:href='%23s' x='16' y='0'/%3E%3Cuse xlink:href='%23s' x='13' y='22'/%3E%3Cuse xlink:href='%23s' x='44' y='15'/%3E%3Cuse xlink:href='%23s' x='12' y='11'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23a)' width='72' height='36'/%3E%3Crect fill='url(%23b)' width='72' height='36'/%3E%3Crect fill='url(%23c)' width='72' height='36'/%3E%3Crect fill='url(%23d)' width='72' height='36'/%3E%3Crect fill='url(%23e)' width='72' height='36'/%3E%3Crect fill='url(%23f)' width='72' height='36'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
     font-size: 18px;
     margin: 0 auto;
     max-width: 1200px;
@@ -25,7 +27,7 @@ a {
     text-decoration: none;
 }
 
-nav a:hover {
+header nav a:hover {
     background-color: #f4f4f5;
     color: #444;
     cursor: pointer;
@@ -350,6 +352,7 @@ figure img {
     -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.25);
 }
 
+/* HOMEPAGE STYLES */
 .heroImage figure {
     text-align: center;
     margin: 0 auto;
@@ -365,8 +368,12 @@ figure img {
     width: 90%
 }
 
+.careers .flex-container {
+    justify-content: flex-start;
+    width: 100%;
+}
+
 .about {
-    /* border: 1px solid rgba(0, 0, 0, 0.3); */
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.25);
     -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.25);
@@ -384,6 +391,48 @@ figure img {
 
 }
 
+/* TYPING-SPECIFIC STYLES */
+.typewriter .type {
+    color: #7b8f8d;
+    font-family: monospace;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .1em;
+    /* Adjust as needed */
+    animation:
+        typing 3.5s steps(30, end),
+        blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange
+    }
+}
 
 /**************ACCORDION*************/
 #widgets {
@@ -420,7 +469,12 @@ figure img {
 html .ui-button.ui-state-disabled:hover,
 html .ui-button.ui-state-disabled:active {
     background: none;
-    background-color: rgba(123, 143, 141, .1);
+    background-color: #fff;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.25);
 }
 
 /************ PROJECTS STYLES **********/
@@ -465,10 +519,10 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .contact {
-    background-color: #ffffff;
-    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%237b8f8d' fill-opacity='0.15'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    /* border: 1px solid rgba(0, 0, 0, 0.5); */
-    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.3);
+    background-attachment: fixed;
+    background-size: cover;
+    */ border-radius: 3px;
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.25);
     -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.25);
@@ -498,8 +552,8 @@ html .ui-button.ui-state-disabled:active {
 
 /***************CONTACT FORM**************/
 .contact-form {
-    background-color: #ffffff;
-    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%237b8f8d' fill-opacity='0.15'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-color: rgba(255, 255, 255, 0.3);
+    /* background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%237b8f8d' fill-opacity='0.15'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.25);
     -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.25);
@@ -567,21 +621,71 @@ footer a {
     font-family: 'Dawning of a New Day', cursive;
     font-size: 20px;
     padding: 14px 16px;
-    text-align: center;
-    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+
+    span[class^='ion'] {
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .link {
+        transition: all .1s ease-in-out;
+    }
+
+    .link a:hover {
+        opacity: .5;
+        transform: scale (.8);
+    }
+
+    footer .active {
+        background-color: #333;
+    }
+
+    .button {}
+
+    //start click effect
+    &:before {
+        content: '';
+        background-color: aliceblue;
+        border-radius: 50%;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transform: scale(0.001, 0.001);
+    }
+
+    &:focus {
+        outline: 0;
+        color: #fff;
+
+        &:before {
+            animation: effect_dylan 0.8s ease-out;
+        }
+    }
 }
 
-footer a:hover {
-    background-color: #ddd;
-    color: black;
-}
+@keyframes effect_dylan {
+    50% {
+        transform: scale(1.5, 1.5);
+        opacity: 0;
+    }
 
-footer .icon {
-    display: none;
-}
+    99% {
+        transform: scale(0.001, 0.001);
+        opacity: 0;
+    }
 
-footer .active {
-    background-color: #333;
+    100% {
+        transform: scale(0.001, 0.001);
+        opacity: 1;
+    }
 }
 
 /***********MEDIA QUERIES***********/
