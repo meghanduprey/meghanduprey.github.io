@@ -429,34 +429,18 @@ figure img {
 
 }
 
-/* TYPING-SPECIFIC STYLES */
-.typewriter .type {
-    color: #7b8f8d;
-    font-family: monospace;
-    overflow: hidden;
-    /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange;
-    /* The typwriter cursor */
-    white-space: nowrap;
-    /* Keeps the content on a single line */
-    margin: 0 auto;
-    /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .1em;
-    /* Adjust as needed */
-    animation:
-        typing 3.5s steps(30, end),
-        blink-caret .5s step-end infinite;
+/* TYPEWRITER */
+
+.typewriter-text {
+    background-color: #7b8f8d;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: .15em;
 }
 
-/* The typing effect */
-@keyframes typing {
-    from {
-        width: 0
-    }
-
-    to {
-        width: 100%
-    }
+.typewriter-cursor {
+    border-right: 4px solid orange;
+    animation: blink-caret .8s step-end infinite
 }
 
 /* The typewriter cursor effect */
@@ -538,10 +522,6 @@ html .ui-button.ui-state-disabled:active {
 #tabs .card {
     margin: auto auto 10px auto;
     width: 100%
-}
-
-#hisglass {
-    /* margin: 0 auto; */
 }
 
 #hisglass img {
@@ -667,12 +647,6 @@ footer a {
 }
 
 @media screen and (max-width: 940px) {
-
-
-    .icon {
-        display: block;
-    }
-
     .card.intro ul {
         padding-left: 0;
     }
@@ -684,11 +658,7 @@ footer a {
 
 }
 
-@media screen and (max-width: 830px) {
-    .heroImage {
-        display: none;
-    }
-}
+@media screen and (max-width: 830px) {}
 
 @media screen and (max-width: 600px) {
 
@@ -705,10 +675,6 @@ footer a {
     }
 
     .icon h2 {
-        display: none;
-    }
-
-    .typewriter {
         display: none;
     }
 

@@ -8,18 +8,28 @@
 
 
 <url>
-  <loc>http://meghanduprey.com/</loc>
-  <lastmod>2018-11-26T14:00:27+00:00</lastmod>
+  <loc>https://www.meghanduprey.com/</loc>
+  <lastmod>2018-12-14T16:49:43+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://meghanduprey.com/index.html</loc>
-  <lastmod>2018-11-26T14:00:27+00:00</lastmod>
+  <loc>https://www.meghanduprey.com/doing_stuff</loc>
+  <lastmod>2018-12-14T16:49:43+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://meghanduprey.com/gallery.html</loc>
-  <lastmod>2018-11-26T14:00:27+00:00</lastmod>
+  <loc>https://www.meghanduprey.com/projects</loc>
+  <lastmod>2018-12-14T16:49:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.meghanduprey.com/contact</loc>
+  <lastmod>2018-12-14T16:49:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.meghanduprey.com/index.html</loc>
+  <lastmod>2018-12-14T16:49:43+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
