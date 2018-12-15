@@ -69,3 +69,14 @@ $(function() {
     }
   }
 });
+
+// TYPEWRITER
+const words =
+      'var languages_i_speak =["HTML", "CSS", "Ruby on Rails", "JS", "WordPress", "Human"];';
+
+    words.split("").forEach(function (word, i) {
+      setTimeout(function () {
+        const $text = document.getElementsByClassName("typewriter-text")[0]
+        $text.innerHTML += word;
+      }, 150 * i)
+    });

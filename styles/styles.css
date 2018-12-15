@@ -320,6 +320,7 @@ header .navigation {
     min-height: 100vh;
 }
 
+/* HOMEPAGE STYLES */
 .card {
     background-color: #fff;
     border-radius: 3px;
@@ -389,7 +390,6 @@ figure img {
     -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.25);
 }
 
-/* HOMEPAGE STYLES */
 .heroImage figure {
     text-align: center;
     margin: 0 auto;
@@ -454,6 +454,16 @@ figure img {
     50% {
         border-color: orange
     }
+}
+
+/* ACCESSIBLE TYPEWRITER */
+.hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
 }
 
 /**************ACCORDION*************/
@@ -661,6 +671,9 @@ footer a {
 @media screen and (max-width: 830px) {}
 
 @media screen and (max-width: 600px) {
+    .wrapper {
+        max-width: 100vw;
+    }
 
     .logo {
         display: none;
@@ -676,6 +689,18 @@ footer a {
 
     .icon h2 {
         display: none;
+    }
+
+    #contact {
+        width: 100%;
+    }
+
+    .card {
+        width: auto;
+    }
+
+    .careers {
+        width: 100%;
     }
 
     footer img {

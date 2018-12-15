@@ -158,6 +158,7 @@
             <span class='typewriter-text'></span>
             <span class='typewriter-cursor' /></span>
           </div>
+          <section class="hidden">var languages_i_speak =["HTML", "CSS", "Ruby on Rails", "JS", "WordPress", "Human"];</section>
         </section>
         <section class="about">
           <h3>Veteran</h3>
@@ -208,17 +209,6 @@
       </nav>
     </footer>
   </div>
-  <script>
-    const words =
-      'var languages_i_speak =["HTML", "CSS", "Ruby on Rails", "JS", "WordPress", "Human"];';
-
-    words.split("").forEach(function (word, i) {
-      setTimeout(function () {
-        const $text = document.getElementsByClassName("typewriter-text")[0]
-        $text.innerHTML += word;
-      }, 150 * i)
-    });
-  </script>
   <script src="scripts/myScript.js"></script>
 </body>
 
