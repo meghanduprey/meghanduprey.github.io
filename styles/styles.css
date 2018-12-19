@@ -632,6 +632,11 @@ textarea:focus {
     outline: none;
 }
 
+.contact-form button {
+    font-size: 16px;
+    padding: 10px;
+}
+
 /***********FOOTER NAV**********/
 footer a {
     color: #fff;
