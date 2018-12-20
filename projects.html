@@ -45,6 +45,8 @@
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/todo.css">
+    <script src="scripts/todo.js"></script>
 
 </head>
 
@@ -113,14 +115,42 @@
                     <p>I also updated the UI for Mark's <a href="https://remotegig.io/">Remote Gig</a> website. I
                         updated the menu to use a JavaScript hamburger menu Mark found on CodePen.</p>
                     <img class="responsive" src="assets/remotegigafter.jpg" alt="Remote Gig website after hamburger menu was added">
+                </section>
+                <section class="card" id="watchandcode">
+                    <h3>Watch and Code</h3>
+                    <p>I completed the <a href="https://watchandcode.com/" target="_blank">Watch and Code JavaScript
+                            tutorial</a> by Gordon Zhu. The task is to create a to-do list. I really enjoyed this
+                        tutorial and how he broke things down and explained them.</p>
+                    <h4>To-Do List</h4>
+                    <div>
+                        <button onclick="handlers.addTodo()">Add</button>
+                        <input id="addTodoTextInput" type="text">
+                    </div>
 
+                    <div>
+                        <button onclick="handlers.changeTodo()">Change Todo</button>
+                        <input id="changeTodoPositionInput" type="number">
+                        <input id="changeTodoTextInput" type="text">
+                    </div>
+
+                    <div>
+                        <button onclick="handlers.toggleCompleted()">Toggle Completed</button>
+                        <input id="toggleCompletedPositionInput" type="number">
+                    </div>
+
+                    <div>
+                        <button onclick="handlers.toggleAll()">Toggle All</button>
+                    </div>
+
+                    <ul>
+                    </ul>
                 </section>
 
             </article>
         </main>
         <footer>
             <nav class="inline">
-                <a href="index.html"><img src="assets/copyrightscaled.png" alt="copyright" width="24" height="24" class="effect-2">
+                <a href="index.html"><img src="assets/copyrightscaled.png" alt="copyright" width="24" height="24">
                     MeghanDuprey.com 2018</a>
                 <a href="https://meghanmduprey.wordpress.com/" target="_blank"><img src="assets/wordpresswhitescaled.png"
                         alt="wordpress logo" width="36" height="36" /></a>
@@ -133,6 +163,7 @@
         </footer>
     </div>
     <script src="scripts/myScript.js"></script>
+
 </body>
 
 </html>
