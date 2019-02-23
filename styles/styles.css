@@ -85,6 +85,7 @@ li::selection {
 
 /**********CLASS & ID STYLES**********/
 
+
 .wrapper {
     background-color: rgba(255, 255, 255, 0.75);
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.25);
@@ -573,7 +574,7 @@ html .ui-button.ui-state-disabled:active {
     margin-left: 10px;
 }
 
-.card a:hover {
+a:hover {
     text-decoration: underline;
 }
 
