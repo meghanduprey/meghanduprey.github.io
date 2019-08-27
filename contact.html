@@ -1,161 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-129788365-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129788365-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'UA-129788365-1');
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-129788365-1");
     </script>
-  <!-- Google Tag Manager -->
-  <script>
-    (function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-5B8XPQJ');
-    </script>
-  <!-- End Google Tag Manager -->
-  <meta name="description" content="A personal website about Meghan Duprey">
-  <meta name="robots" content="index,follow">
-  <meta name="google-site-verification" content="EtHFX7GYzlKJdDU6x0er_qGN9NS1Wu99UFGGXu3y0ZE" />
-  <title>Projects</title>
-  <script src="scripts/jquery-3.3.1.min.js"></script>
-  <link rel="stylesheet" href="scripts/ui/jquery-ui.min.css">
-  <script src="scripts/ui/jquery-ui.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
-  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles/styles.css">
-  <script>
-    $(function () {
-            $("#widgets").accordion({
-                collapsible: true
-            });
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js"
         });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5B8XPQJ");
     </script>
-  <!--     tabs-->
-  <script>
-    $(function () {
-            $("#tabs").tabs();
+    <!-- End Google Tag Manager -->
+    <meta name="description" content="A personal website about Meghan Duprey" />
+    <meta name="robots" content="index,follow" />
+    <meta
+      name="google-site-verification"
+      content="EtHFX7GYzlKJdDU6x0er_qGN9NS1Wu99UFGGXu3y0ZE"
+    />
+    <title>Projects</title>
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="scripts/ui/jquery-ui.min.css" />
+    <script src="scripts/ui/jquery-ui.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah"
+      rel="stylesheet"
+    />
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script>
+      $(function() {
+        $("#widgets").accordion({
+          collapsible: true
         });
+      });
     </script>
+    <!-- tabs -->
+    <script>
+      $(function() {
+        $("#tabs").tabs();
+      });
+    </script>
+  </head>
 
-</head>
-
-<body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5B8XPQJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  <div class="wrapper">
-    <header>
-      <div id="main-nav">
-        <nav class="navigation">
-          <h1 class="logo">Meghan Duprey</h1>
-          <ul>
-            <li><a href="index" class="effect-2">Home</a></li>
-            <li>&middot;</li>
-            <li><a href="doing_stuff" class="effect-2">I'm Doing Stuff</a></li>
-            <li>&middot;</li>
-            <li><a href="projects" class="effect-2">Projects</a></li>
-            <li>&middot;</li>
-            <li><a href="contact" class="effect-2">Contact</a></li>
-            <li>&middot;</li>
-            <li><a href="playground" class="effect-2">Playground</a></li>
-            <li>&middot;</li>
-            <li class="">
-              <a href="https://meghanduprey.blog/" target="_blank" class="effect-2">Blog</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div id="hamburger">
-        <a id="menu-button"></a>
-        <div id="hamburger-menu">
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5B8XPQJ"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="wrapper">
+      <header>
+        <div id="main-nav">
           <nav class="navigation">
-            <a href="index">Home</a>
-            <a href="doing_stuff">I'm Doing Stuff</a>
-            <a href="projects">Projects</a>
-            <a href="contact">Contact</a>
-            <a href="playground">Playground</a>
-            <a href="https://meghanduprey.blog/" target="_blank">WordPress Blog</a>
+            <h1 class="logo">Meghan Duprey</h1>
+            <ul>
+              <li><a href="index" class="effect-2">Home</a></li>
+              <li>&middot;</li>
+              <li>
+                <a href="doing_stuff" class="effect-2">I'm Doing Stuff</a>
+              </li>
+              <li>&middot;</li>
+              <li><a href="projects" class="effect-2">Projects</a></li>
+              <li>&middot;</li>
+              <li><a href="gallery.html" title="Gallery">Gallery</a></li>
+              <li>&middot;</li>
+              <li><a href="contact" class="effect-2">Contact</a></li>
+              <li>&middot;</li>
+              <!--
+                <li><a href="playground" class="effect-2">Playground</a></li>
+                <li>&middot;</li>
+              -->
+              <li class="">
+                <a
+                  href="https://meghanduprey.blog/"
+                  target="_blank"
+                  class="effect-2"
+                  >Blog</a
+                >
+              </li>
+            </ul>
           </nav>
         </div>
-        <div id="overlay"></div>
-      </div>
-    </header>
-    <a href="javascript:" id="top"><i class="icon-chevron-up"></i></a>
-    <!-- CONTACT PAGE---------------- -->
-    <main>
-      <div id="contact">
-        <h2>Where You Can Find Me:</h2>
-        <article class="contact">
-          <section class="card">
-            <a href="https://github.com/meghanduprey" target="_blank"><img src="assets/Octocat.png" alt="github logo" /></a>
-            <a href="https://github.com/meghanduprey" target="_blank">
-              <h2>GitHub</h2>
-            </a>
+        <div id="hamburger">
+          <a id="menu-button"></a>
+          <div id="hamburger-menu">
+            <nav class="navigation">
+              <a href="index">Home</a>
+              <a href="doing_stuff">I'm Doing Stuff</a>
+              <a href="projects">Projects</a> <a href="contact">Contact</a>
+              <a href="gallery">Gallery</a>
+              <a href="https://meghanduprey.blog/" target="_blank"
+                >WordPress Blog</a
+              >
+            </nav>
+          </div>
+          <div id="overlay"></div>
+        </div>
+      </header>
+      <a href="javascript:" id="top"><i class="icon-chevron-up"></i></a>
+      <!-- CONTACT PAGE---------------- -->
+      <main>
+        <div id="contact">
+          <h2>Where You Can Find Me:</h2>
+          <article class="contact">
+            <section class="card">
+              <a href="https://github.com/meghanduprey" target="_blank"
+                ><img src="assets/Octocat.png" alt="github logo"
+              /></a>
+              <a href="https://github.com/meghanduprey" target="_blank">
+                <h2>GitHub</h2>
+              </a>
+            </section>
+
+            <section class="card">
+              <a href="https://meghanmduprey.wordpress.com/" target="_blank"
+                ><img
+                  src="assets/wordpressblue-compressor.png"
+                  width="80"
+                  height="80"
+                  alt="WordPress logo"
+              /></a>
+
+              <a href="https://meghanmduprey.wordpress.com/" target="_blank">
+                <h2>Blog</h2>
+              </a>
+            </section>
+            <section class="card">
+              <a href="https://twitter.com/meghanduprey" target="_blank"
+                ><img src="assets/twitterblue.png" alt="twitter logo"
+              /></a>
+
+              <a href="https://twitter.com/meghanduprey" target="_blank">
+                <h2>Twitter</h2>
+              </a>
+            </section>
+          </article>
+          <section class="contact-form">
+            <form
+              method="POST"
+              action="https://formspree.io/meghan.duprey@gmail.com"
+              name="contact"
+              onsubmit="return validate()"
+            >
+              <input type="text" name="name" placeholder="Your name" />
+              <input type="email" name="email" placeholder="Your email" />
+              <textarea name="message" placeholder="Your Message"></textarea>
+              <button type="submit">Email Me!</button>
+            </form>
           </section>
+        </div>
+      </main>
+      <footer>
+        <nav class="inline link">
+          <a href="index.html"
+            ><img
+              src="assets/copyrightscaled.png"
+              alt="copyright"
+              width="24"
+              height="24"
+            />
+            MeghanDuprey.com 2018</a
+          >
+          <a href="https://meghanmduprey.wordpress.com/" target="_blank"
+            ><img
+              src="assets/wordpresswhitescaled.png"
+              alt="wordpress logo"
+              width="36"
+              height="36"
+          /></a>
 
-          <section class="card">
-            <a href="https://meghanmduprey.wordpress.com/" target="_blank"><img src="assets/wordpressblue-compressor.png"
-                width="80" height="80" alt="WordPress logo" /></a>
-
-            <a href="https://meghanmduprey.wordpress.com/" target="_blank">
-              <h2>Blog</h2>
-            </a>
-          </section>
-          <section class="card">
-            <a href="https://twitter.com/meghanduprey" target="_blank"><img src="assets/twitterblue.png" alt="twitter logo"></a>
-
-            <a href="https://twitter.com/meghanduprey" target="_blank">
-              <h2>Twitter</h2>
-            </a>
-          </section>
-        </article>
-        <section class="contact-form">
-          <form method="POST" action="https://formspree.io/meghan.duprey@gmail.com" name="contact" onsubmit="return validate()">
-            <input type="text" name="name" placeholder="Your name" />
-            <input type="email" name="email" placeholder="Your email" />
-            <textarea name="message" placeholder="Your Message"></textarea>
-            <button type="submit">Email Me!</button>
-          </form>
-        </section>
-      </div>
-    </main>
-    <footer>
-      <nav class="inline link">
-        <a href="index.html"><img src="assets/copyrightscaled.png" alt="copyright" width="24" height="24" />
-          MeghanDuprey.com 2018</a>
-        <a href="https://meghanmduprey.wordpress.com/" target="_blank"><img src="assets/wordpresswhitescaled.png" alt="wordpress logo"
-            width="36" height="36" /></a>
-
-        <a href="https://github.com/meghanduprey" target="_blank"><img src="assets/githubwhitescaled.png" alt="github logo"
-            width="35" height="35" /></a>
-        <a href="https://medium.com/@meghan.duprey" target="_blank"><img src="assets/mediumwhite.png" alt="medium logo"></a>
-        <a href="https://twitter.com/meghanduprey" target="_blank" alt="twitter logo"><img src="assets/twitterwhitescaled.png"></a>
-      </nav>
-    </footer>
-  </div>
-  <script src="scripts/myScript.js"></script>
-</body>
-
+          <a href="https://github.com/meghanduprey" target="_blank"
+            ><img
+              src="assets/githubwhitescaled.png"
+              alt="github logo"
+              width="35"
+              height="35"
+          /></a>
+          <a href="https://medium.com/@meghan.duprey" target="_blank"
+            ><img src="assets/mediumwhite.png" alt="medium logo"
+          /></a>
+          <a
+            href="https://twitter.com/meghanduprey"
+            target="_blank"
+            alt="twitter logo"
+            ><img src="assets/twitterwhitescaled.png"
+          /></a>
+        </nav>
+      </footer>
+    </div>
+    <script src="scripts/myScript.js"></script>
+  </body>
 </html>
