@@ -1,249 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-129788365-1"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
 
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "UA-129788365-1");
-    </script>
-    <!-- Google Tag Manager -->
-    <script>
-      (function(w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
-          "gtm.start": new Date().getTime(),
-          event: "gtm.js"
-        });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-5B8XPQJ");
-    </script>
-    <!-- End Google Tag Manager -->
-    <meta name="description" content="A personal website about Meghan Duprey" />
-    <meta name="robots" content="index,follow" />
-    <meta
-      name="google-site-verification"
-      content="EtHFX7GYzlKJdDU6x0er_qGN9NS1Wu99UFGGXu3y0ZE"
-    />
-    <title>Projects</title>
-    <script src="scripts/jquery-3.3.1.min.js"></script>
-    <link rel="stylesheet" href="scripts/ui/jquery-ui.min.css" />
-    <script src="scripts/ui/jquery-ui.js"></script>
-    <link
-      href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah"
-      rel="stylesheet"
-    />
-    <link
-      href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="stylesheet" href="styles/todo.css" />
-    <script src="scripts/todo.js"></script>
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129788365-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-5B8XPQJ"
-        height="0"
-        width="0"
-        style="display:none;visibility:hidden"
-      ></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <div class="wrapper">
-      <header>
-        <div id="main-nav">
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "UA-129788365-1");
+  </script>
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        "gtm.start": new Date().getTime(),
+        event: "gtm.js"
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-5B8XPQJ");
+  </script>
+  <!-- End Google Tag Manager -->
+  <meta name="description" content="A personal website about Meghan Duprey" />
+  <meta name="robots" content="index,follow" />
+  <meta name="google-site-verification" content="EtHFX7GYzlKJdDU6x0er_qGN9NS1Wu99UFGGXu3y0ZE" />
+  <title>Projects</title>
+  <script src="scripts/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="scripts/ui/jquery-ui.min.css" />
+  <script src="scripts/ui/jquery-ui.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet" />
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="styles/todo.css" />
+  <script src="scripts/todo.js"></script>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5B8XPQJ" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div class="wrapper">
+    <header>
+      <div id="main-nav">
+        <nav class="navigation">
+          <h1 class="logo">Meghan Duprey</h1>
+          <ul>
+            <li><a href="index" class="effect-2">Home</a></li>
+            <li>&middot;</li>
+            <li>
+              <a href="doing_stuff" class="effect-2">I'm Doing Stuff</a>
+            </li>
+            <li>&middot;</li>
+            <li><a href="projects" class="effect-2">Projects</a></li>
+            <li>&middot;</li>
+            <li>
+              <a href="gallery.html" class="effect-2" title="Gallery">Gallery</a>
+            </li>
+            <li>&middot;</li>
+            <li><a href="contact" class="effect-2">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="hamburger">
+        <a id="menu-button"></a>
+        <div id="hamburger-menu">
           <nav class="navigation">
-            <h1 class="logo">Meghan Duprey</h1>
-            <ul>
-              <li><a href="index" class="effect-2">Home</a></li>
-              <li>&middot;</li>
-              <li>
-                <a href="doing_stuff" class="effect-2">I'm Doing Stuff</a>
-              </li>
-              <li>&middot;</li>
-              <li><a href="projects" class="effect-2">Projects</a></li>
-              <li>&middot;</li>
-              <li>
-                <a href="gallery.html" class="effect-2" title="Gallery"
-                  >Gallery</a
-                >
-              </li>
-              <li>&middot;</li>
-              <li><a href="contact" class="effect-2">Contact</a></li>
-              <li>&middot;</li>
-              <!--
-                <li><a href="playground" class="effect-2">Playground</a></li>
-                <li>&middot;</li>
-              -->
-              <li class="">
-                <a
-                  href="http://meghandupreycom.wordpress.com"
-                  target="_blank"
-                  class="effect-2"
-                  >Blog</a
-                >
-              </li>
-            </ul>
+            <a href="index">Home</a>
+            <a href="doing_stuff">I'm Doing Stuff</a>
+            <a href="projects">Projects</a> <a href="contact">Contact</a>
+            <a href="gallery">Gallery</a>
+
           </nav>
         </div>
-        <div id="hamburger">
-          <a id="menu-button"></a>
-          <div id="hamburger-menu">
-            <nav class="navigation">
-              <a href="index">Home</a>
-              <a href="doing_stuff">I'm Doing Stuff</a>
-              <a href="projects">Projects</a> <a href="contact">Contact</a>
-              <a href="gallery">Gallery</a>
-              <a href="http://meghandupreycom.wordpress.com" target="_blank"
-                >WordPress Blog</a
-              >
-            </nav>
+        <div id="overlay"></div>
+      </div>
+    </header>
+    <a href="javascript:" id="top"><i class="icon-chevron-up"></i></a>
+    <main>
+      <!-- PROJECTS PAGE ------------------- -->
+      <h2>Projects</h2>
+      <article>
+        <section class="card" id="hisglass">
+          <h3><a href="http://his.glass/" target="_blank">his.glass</a></h3>
+          <p>
+            I met Bob on <a href="https://nextdoor.com">NextDoor</a>. After
+            getting to know him, I discovered he's a super talented, local
+            glass artist. I offered to redesign his website using WordPress.
+          </p>
+          <img class="responsive front" src="assets/hisglassbefore.jpg" width="300" alt="Bob's previous website" /><img
+            class="responsive back" src="assets/hisglassafter.jpg" alt="Bob's website after I redesigned it"
+            width="300" />
+        </section>
+        <section class="card" id="ezslp">
+          <h3><a href="https://ezslp.com/" target="_blank">ezslp.com</a></h3>
+          <p>
+            I met Mark, an adjunct professor, in my WEB182 class at AB Tech.
+            On a break between classes he started teaching me Rails. Mark gave
+            me the project of redesging the front-end of
+            <a href="https://ezslp.com/">EZSLP.com</a>.
+          </p>
+          <img class="responsive" src="assets/ezslpbefore.jpg" alt="EZSLP website before redesign" />
+          <img class="responsive" src="assets/screenshot-ezslp.com-2019.02.16-11-10-53.png"
+            alt="EZSLP website before redesign" width="60%" />
+        </section>
+        <section class="card" id="remotegig">
+          <h3><a href="https://remotegig.io/">remotegig.io</a></h3>
+          <p>
+            I also updated the UI for Mark's
+            <a href="https://remotegig.io/">Remote Gig</a> website. I updated
+            the menu to use a JavaScript hamburger menu Mark found on CodePen.
+          </p>
+          <img class="responsive" src="assets/remotegigafter.jpg"
+            alt="Remote Gig website after hamburger menu was added" />
+        </section>
+        <section class="card" id="watchandcode">
+          <h3>Watch and Code</h3>
+          <p>
+            I completed the
+            <a href="https://watchandcode.com/" target="_blank">Watch and Code JavaScript tutorial</a>
+            by Gordon Zhu. The task is to create a to-do list. I really
+            enjoyed this tutorial and how he broke things down and explained
+            them.
+          </p>
+          <div class="glitch-embed-wrap" style="height: 420px; width: 100%;">
+            <iframe allow="geolocation; microphone; camera; midi; encrypted-media"
+              src="https://glitch.com/embed/#!/embed/marble-mint?path=views/index.html&previewSize=0"
+              alt="marble-mint on Glitch" style="height: 100%; width: 100%; border: 0;">
+            </iframe>
           </div>
-          <div id="overlay"></div>
-        </div>
-      </header>
-      <a href="javascript:" id="top"><i class="icon-chevron-up"></i></a>
-      <main>
-        <!-- PROJECTS PAGE ------------------- -->
-        <h2>Projects</h2>
-        <article>
-          <section class="card" id="hisglass">
-            <h3><a href="http://his.glass/" target="_blank">his.glass</a></h3>
-            <p>
-              I met Bob on <a href="https://nextdoor.com">NextDoor</a>. After
-              getting to know him, I discovered he's a super talented, local
-              glass artist. I offered to redesign his website using WordPress.
-            </p>
-            <img
-              class="responsive front"
-              src="assets/hisglassbefore.jpg"
-              width="300"
-              alt="Bob's previous website"
-            /><img
-              class="responsive back"
-              src="assets/hisglassafter.jpg"
-              alt="Bob's website after I redesigned it"
-              width="300"
-            />
-          </section>
-          <section class="card" id="ezslp">
-            <h3><a href="https://ezslp.com/" target="_blank">ezslp.com</a></h3>
-            <p>
-              I met Mark, an adjunct professor, in my WEB182 class at AB Tech.
-              On a break between classes he started teaching me Rails. Mark gave
-              me the project of redesging the front-end of
-              <a href="https://ezslp.com/">EZSLP.com</a>.
-            </p>
-            <img
-              class="responsive"
-              src="assets/ezslpbefore.jpg"
-              alt="EZSLP website before redesign"
-            />
-            <img
-              class="responsive"
-              src="assets/screenshot-ezslp.com-2019.02.16-11-10-53.png"
-              alt="EZSLP website before redesign"
-              width="60%"
-            />
-          </section>
-          <section class="card" id="remotegig">
-            <h3><a href="https://remotegig.io/">remotegig.io</a></h3>
-            <p>
-              I also updated the UI for Mark's
-              <a href="https://remotegig.io/">Remote Gig</a> website. I updated
-              the menu to use a JavaScript hamburger menu Mark found on CodePen.
-            </p>
-            <img
-              class="responsive"
-              src="assets/remotegigafter.jpg"
-              alt="Remote Gig website after hamburger menu was added"
-            />
-          </section>
-          <section class="card" id="watchandcode">
-            <h3>Watch and Code</h3>
-            <p>
-              I completed the
-              <a href="https://watchandcode.com/" target="_blank"
-                >Watch and Code JavaScript tutorial</a
-              >
-              by Gordon Zhu. The task is to create a to-do list. I really
-              enjoyed this tutorial and how he broke things down and explained
-              them.
-            </p>
-            <div class="glitch-embed-wrap" style="height: 420px; width: 100%;">
-              <iframe
-                allow="geolocation; microphone; camera; midi; encrypted-media"
-                src="https://glitch.com/embed/#!/embed/marble-mint?path=views/index.html&previewSize=0"
-                alt="marble-mint on Glitch"
-                style="height: 100%; width: 100%; border: 0;"
-              >
-              </iframe>
-            </div>
-          </section>
-        </article>
-      </main>
-      <footer>
-        <nav class="inline">
-          <a href="index.html"
-            ><img
-              src="assets/copyrightscaled.png"
-              alt="copyright"
-              width="24"
-              height="24"
-            />
-            MeghanDuprey.com 2018</a
-          >
-          <a href="https://meghanmduprey.wordpress.com/" target="_blank"
-            ><img
-              src="assets/wordpresswhitescaled.png"
-              alt="wordpress logo"
-              width="36"
-              height="36"
-          /></a>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <nav class="inline">
+        <a href="index.html"><img src="assets/copyrightscaled.png" alt="copyright" width="24" height="24" />
+          MeghanDuprey.com 2018</a>
+        <a href="https://meghanmduprey.wordpress.com/" target="_blank"><img src="assets/wordpresswhitescaled.png"
+            alt="wordpress logo" width="36" height="36" /></a>
 
-          <a href="https://github.com/meghanduprey" target="_blank"
-            ><img
-              src="assets/githubwhitescaled.png"
-              alt="github logo"
-              width="35"
-              height="35"
-          /></a>
-          <a href="https://medium.com/@meghan.duprey" target="_blank"
-            ><img src="assets/mediumwhite.png" alt="medium logo"
-          /></a>
-          <a href="https://twitter.com/meghanduprey" target="_blank"
-            ><img src="assets/twitterwhitescaled.png" alt="twitter logo"
-          /></a>
-        </nav>
-      </footer>
-    </div>
-    <script src="scripts/myScript.js"></script>
-  </body>
+        <a href="https://github.com/meghanduprey" target="_blank"><img src="assets/githubwhitescaled.png"
+            alt="github logo" width="35" height="35" /></a>
+        <a href="https://medium.com/@meghan.duprey" target="_blank"><img src="assets/mediumwhite.png"
+            alt="medium logo" /></a>
+        <a href="https://twitter.com/meghanduprey" target="_blank"><img src="assets/twitterwhitescaled.png"
+            alt="twitter logo" /></a>
+      </nav>
+    </footer>
+  </div>
+  <script src="scripts/myScript.js"></script>
+</body>
+
 </html>
